@@ -5,7 +5,7 @@ permalink: list/projects.html
 show_profile: true
 ---
 
-## Prueba
+## Índice
 
 <style>
 	#menu * { list-style:none;}
