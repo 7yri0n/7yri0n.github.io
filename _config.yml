@@ -71,4 +71,56 @@ defaults:
       show_profile: false
       layout: defaults/list
 
+  -
+    scope:
+      path: "windows"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  -
+    scope:
+      path: "linux"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  -
+    scope:
+      path: "monitorizacion"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  -
+    scope:
+      path: "analisisAlertas"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  -
+    scope:
+      path: "ctf/HackTheBox"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  -
+    scope:
+      path: "ctf/TryHackMe"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  -
+    scope:
+      path: "pentesting"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+
+
+
 
