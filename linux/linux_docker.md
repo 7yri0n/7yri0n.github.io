@@ -87,10 +87,14 @@ Mostrar las redes predefinidas:
 
 `docker network ls`
 
+Los datos que nos muestra este comando:
+
 - NETWORK ID
 - NAME:
 	1. Host: El contenedor será accesible usando la misma IP que la máquina host.
+
 	`docker run -d --name docker --network host image`
+
 	2. Brigde: Los contenedores conectados a esta red que quieren exponer algún puerto al exterior tienen que usar la opción -p.
 - DRIVER
 - SCOPE
