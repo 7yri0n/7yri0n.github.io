@@ -11,7 +11,7 @@
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
+  border: $card-border-width solid rgba(0,0,0,0);
   @include border-radius($card-border-radius);
 
   > hr {
@@ -132,10 +132,17 @@
 }
 
 .card-img,
-.card-img-top,
 .card-img-bottom {
   flex-shrink: 0; // For IE: https://github.com/twbs/bootstrap/issues/29396
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  position: center;
+}
+
+.card-img-top {
+  flex-shrink: 0; // For IE: https://github.com/twbs/bootstrap/issues/29396
+  width: 30%; // Required because we use flexbox and this inherently applies align-self: stretch
+  position: center;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .card-img,
