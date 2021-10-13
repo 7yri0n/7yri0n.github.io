@@ -5,7 +5,7 @@ permalink: list/projects.html
 show_profile: true
 ---
 
-## Índice
+
 
 <style>
 	#menu * { list-style:none;}
@@ -98,40 +98,5 @@ show_profile: true
 {% endfor %}
 
 </div>
-	</ul>
-	<li><input type="checkbox" name="list" id="nivel1-6"><label for="nivel1-6">WriteUp CTF</label>
-	   <ul class="interior">
-	   	 	<li><input type="checkbox" name="list" id="nivel2-6"><label for="nivel2-6">HackTheBox CTF</label>
-	         <ul class="interior">
-
-<div markdown="1">
-
-{% assign hackthebox = site.pages | where_exp: "item" , "item.path contains 'ctf/HackTheBox'"%}
-
-{% for item in hackthebox %}
-
-- [{{item.title }}]({{item.url}})
-
-{% endfor %}
-
-</div>
-	            </ul>
-	         </li>
-	         <li><input type="checkbox" name="list" id="nivel2-7"><label for="nivel2-7">TryHackMe CTF</label>
-	         <ul class="interior">
-
-<div markdown="1">
-
-{% assign tryhackme = site.pages | where_exp: "item" , "item.path contains 'ctf/TryHackMe'"%}
-
-{% for item in tryhackme %}
-
-- [{{item.title }}]({{item.url}})
-
-{% endfor %}
-
-</div>
-	          </ul>
-	        </li>
 	</ul>
 
