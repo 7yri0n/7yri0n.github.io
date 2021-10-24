@@ -1,7 +1,0 @@
----
-title: Prueba
----
-
-## Prueba
-
-prueba
