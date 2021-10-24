@@ -105,14 +105,7 @@ defaults:
 
   -
     scope:
-      path: "ctf/HackTheBox"
-    values:
-      show_profile: false
-      layout: defaults/project
-
-  -
-    scope:
-      path: "ctf/TryHackMe"
+      path: "analisisAlertas/funcionamiento_protocolo"
     values:
       show_profile: false
       layout: defaults/project

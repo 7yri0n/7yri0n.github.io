@@ -41,6 +41,18 @@ show_profile: true
 	</ul>
    <li><input type="checkbox" name="list" id="nivel1-2"><label for="nivel1-2">Análisis de Alertas</label>
    <ul class="interior">
+   		<li><input type="checkbox" name="list" id="nivel2-1"><label for="nivel2-1">Funcionamiento protocolos</label>
+
+{% assign funcionamientoProtocolo = site.pages | where_exp: "item" , "item.path contains 'analisisAlertas/funcionamiento_protocolo'"%}
+
+{% for item in funcionamientoProtocolo %}
+
+- [{{item.title }}]({{item.url}})
+
+{% endfor %}
+
+   </ul>
+   <ul class="interior">
 
 <div markdown="1">
 
