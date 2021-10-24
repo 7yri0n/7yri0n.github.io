@@ -43,6 +43,8 @@ show_profile: true
    <ul class="interior">
    		<li><input type="checkbox" name="list" id="nivel2-1"><label for="nivel2-1">Funcionamiento protocolos</label>
 
+<div markdown="1">
+
 {% assign funcionamientoProtocolo = site.pages | where_exp: "item" , "item.path contains 'analisisAlertas/funcionamiento_protocolo'"%}
 
 {% for item in funcionamientoProtocolo %}
@@ -51,6 +53,7 @@ show_profile: true
 
 {% endfor %}
 
+</div>
    </ul>
    <ul class="interior">
 
