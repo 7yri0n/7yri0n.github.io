@@ -50,3 +50,7 @@ Los paquetes ICMP tienen un <span style="color: red">code</span> y <span style="
 Un ping flood es un ataque DDoS donde el atacante intenta inundar un dispositivo con paquetes ICMP (request reply). Este ataque se realiza desde varios dispositivos a uno concreto (botnet). El daño de este ataque se encuentra proporcional con el número de peticiones realizadas contra el objetivo. El tráfico de ataque de Ping Flood es semétrico, la cantidad de ancho de banda que recibe el dispositivo es simplemente la suma del tráfico total enviado desde cada host.
 
 Se puede mitigar deshabilitando la funcionalidad de ICMP, aunque esto es malo si el administrador quiere hacer uso de las herramientas de network.
+
+
+
+

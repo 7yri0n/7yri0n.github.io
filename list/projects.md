@@ -41,7 +41,22 @@ show_profile: true
 	</ul>
    <li><input type="checkbox" name="list" id="nivel1-2"><label for="nivel1-2">Análisis de Alertas</label>
    <ul class="interior">
-   		<li><input type="checkbox" name="list" id="nivel2-1"><label for="nivel2-1">Funcionamiento protocolos</label>
+
+<div markdown="1">
+
+{% assign analisisAlertas = site.pages | where_exp: "item" , "item.path contains 'analisisAlertas/index'"%}
+
+{% for item in analisisAlertas %}
+
+- [{{item.title }}]({{item.url}})
+
+{% endfor %}
+
+</div>
+   		
+<li><input type="checkbox" name="list" id="nivel2-1" ><label for="nivel2-1">Funcionamiento protocolos</label>
+
+<ul class="interior">
 
 <div markdown="1">
 
@@ -54,21 +69,10 @@ show_profile: true
 {% endfor %}
 
 </div>
-   </ul>
-   <ul class="interior">
 
-<div markdown="1">
+</ul>
 
-{% assign analisisAlertas = site.pages | where_exp: "item" , "item.path contains 'analisisAlertas'"%}
-
-{% for item in analisisAlertas %}
-
-- [{{item.title }}]({{item.url}})
-
-{% endfor %}
-
-</div>
-	</ul>
+</li></ul>
 	<li><input type="checkbox" name="list" id="nivel1-3"><label for="nivel1-3">Monitorización (CERT)</label>
 	   <ul class="interior">
 
