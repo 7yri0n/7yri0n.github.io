@@ -37,7 +37,57 @@ Una vez tengamos identificado el tipo de correo a analizar, es recomendable hace
 - ¿El emisor de correo es una suplantación de identidad?
 
 
-## Análisis de cabeceras de correo
+## Análisis específico de correo
+
+Ahora con una idea general del correo que estamos analizando, tenemos varias herramientas o tecnicas que nos van a ayudar a comprender las preguntas que no hayamos resuelto.
+
+#### Cabeceras de correo
+
+De las cabeceras de un correo, podemos obtener toda la información posible, pero para un análisis las más importantes son las siguientes:
+
+- **Date**: Día, Fecha, Hora y zona horaria del mensaje (Date: Thu, 25 Nov 2021 04:00:45 +0000)
+- **Subject**: Asunto del mensaje
+- **From**: Emisor o dirección de quien envia el correo 
+- **To**: Destinatario del correo.
+- **Received**: Muestra una lista de todos los servidores / ordenadores por las que el correo ha viajado hasta llegar al destinatario. **Se leen de abajo hacia arriba**. La primera linea de "Received" es tu propio sistema. La última linea "Received" es donde se originó el correo. Un ejemplo:
+
+	1. from: Dominio y dirección IP desde donde se retransmitio el correo en cualquier punto específico..
+	2. by: La IP o nombre del servidor de donde se envio originalmente el mensaje. **IMPORTANTE**
+	3. with: El servicio utilizado para el envió (ESMTP o Microsoft SMTP)
+	4. for: Correo al que va dirigido o destinatario final.
+
+![Ejemplo Received](/theme/img/imagenesDocumentation/received.png)
+
+Si vemos en este ejemplo la IP original del envio es 74.208.5.2 o dominio mrelay.perfora.net.
+
+#### Registros SPF, DMARC, DKIM, MTA, MUA
+
+#### Analizar URL
+
+#### Analizar adjunto
+
+## Mitigación o dispositivos para controlar correos maliciosos
+
+## Respuesta ante incidentes
+
+## Herramientas
+
+https://www.iptrackeronline.com/email-header-analysis.php
+
+**Transformar msg to eml**
+
+```bash
+sudo apt-get install libemail-outlook-message-perl libemail-sender-perl
+msgconver *.msg
+```
+
+## Bibliografia
+
+https://toolbox.googleapps.com/apps/messageheader/
+https://www.iana.org/assignments/message-headers/message-headers.xhtml
+
+
+AnalisisMalware
 
 
 
