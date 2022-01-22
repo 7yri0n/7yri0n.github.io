@@ -2,15 +2,25 @@
     <div class="card bg-light mb-3 space-before">
         <div class="card-body">
             <div class="card-title">
-                <h5>Menú</h5>
+                <div style="color: rgb(136, 153, 168)">
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="icon grey mr-1">
+                            {% include icons/alinear-al-centro.svg %}
+                        </span>
+                        <a style="font-size: large; ">Content</a>
+                    </div>
+                </div>
+                <hr>
             </div>
+            
             <ul class="nav flex-column nav-pills header-list">
             </ul>
+            <hr>
             <div class="d-flex align-items-center mt-2">
                 <span class="icon grey mr-1">
                     {% include entypo/arrow-left.svg %}
                 </span>
-                <a href="{{ site.baseurl }}{% link list/projects.md %}">Documentation</a>
+                <a href="{{ site.baseurl }}{% link list/projects.md %}">Volver</a>
             </div>
         </div>
     </div>

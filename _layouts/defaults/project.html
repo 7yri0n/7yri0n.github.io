@@ -7,14 +7,13 @@ layout: default_project
 </h1>
 
 
-
 {{ content }}
 
 <script type="text/javascript">
     $(document).ready(function() {
         var tpl = 
             "<li class='nav-item'>\
-                <a class='nav-link bg-white mb-1' href='#header[idx]'>[name]</a>\
+                <a class='nav-link bg-white mb-1' style='color: rgb(92, 105, 117); font-weight: bold;' href='#header[idx]'>[name]</a>\
             </li>"
         $("h2").each(function(idx, h2) {
             $(h2).attr("id", "header" + idx)

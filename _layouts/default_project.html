@@ -13,6 +13,9 @@
 
 <div class="container site-container" id="top">
     <div class="row">
+        <div class="col-md-12 col-lg-8 col-xl-{{ col2 }} pb-4 content">
+            {{ content }}
+        </div>
         <div class="d-none d-lg-block col-lg-4 col-xl-{{ col1 }} side">
                 {% include components/project-meta.html %}
                 {% include bars/side.html %}
@@ -20,12 +23,10 @@
 
             </div>
         </div>
-        <div class="col-md-12 col-lg-8 col-xl-{{ col2 }} pb-4 content">
-            {{ content }}
-        </div>
         <div class="col-md-12 d-lg-none bottom">
             {% include bars/bottom.html %}
         </div>
+
     </div>
 </div>
 
